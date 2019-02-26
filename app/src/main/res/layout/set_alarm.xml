@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/MidnightBlue">
+
+
+    <ImageButton
+        android:id="@+id/cancel_alarm_button"
+        android:background="@color/MidnightBlue"
+        android:layout_marginTop="7dp"
+        android:layout_width="67dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/cancel_icon" />
+
+    <TimePicker
+        android:id="@+id/alarm_time_picker"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:timePickerMode="spinner" />
+<!--my_alarm_radio_group, weekends_radio_button, non_weekends_radio_button-->
+    <RadioGroup
+        android:id="@+id/my_alarm_radio_group"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="170dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/weekends_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sat/Sun" />
+
+
+        <RadioButton
+            android:id="@+id/non_weekends_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/my_alarm_radio_group"
+            android:layout_weight="1"
+            android:text="Mon/Fri" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/set_alarm_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:text="Set alarm" />
+
+    <ImageButton
+        android:id="@+id/finish_set_alarm"
+        android:background="@color/MidnightBlue"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_action_check" />
+
+    <Spinner
+        android:id="@+id/set_sound_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="126dp" />
+
+
+
+
+</RelativeLayout>
