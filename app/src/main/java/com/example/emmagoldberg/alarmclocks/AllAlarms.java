@@ -25,7 +25,6 @@ public class AllAlarms extends AppCompatActivity {
 
     // our home alarm class, that stores the list view of all of the alarms
 
-    // checklist: final test, fix any errors in gettime, make ui pretty
 
     private ListView mAlarmListView;
 
